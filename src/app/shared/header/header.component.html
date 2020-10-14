@@ -1,0 +1,49 @@
+<!-- Main Navigation -->
+<header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light fixed-top scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="">
+        <img src="https://cdn.worldvectorlogo.com/logos/angular-icon.svg">
+        SHOP
+      </a>
+
+      <!-- Collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+
+        <!-- Right -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a  routerLink="/products" class="nav-link waves-effect">
+              Shop
+            </a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/checkout" class="nav-link waves-effect">
+              checkout
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a (click)="logout()" class="nav-link waves-effect">
+              logout
+            </a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Links -->
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+</header>
+<!-- Main Navigation -->

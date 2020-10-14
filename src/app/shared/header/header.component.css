@@ -1,0 +1,12 @@
+.fixed-top {
+    background-color: #e9ecef;
+}
+
+.navbar-brand img {
+    max-width: 3%;
+    vertical-align: bottom;
+}
+
+.navbar-brand{
+    font-weight: 600;
+}

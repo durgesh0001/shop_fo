@@ -1,0 +1,43 @@
+<!--Section: Block Content-->
+<section class="container">
+  <app-header></app-header>
+  <br/>
+  <h2 class="my-5 h2 text-center">Products</h2>
+
+  <!-- Grid row -->
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-md-4 mb-4" *ngFor="let productDetails of products.data">
+
+      <!-- Card -->
+      <div class="">
+
+        <div class="view zoom overlay z-depth-2 rounded">
+          <img class="img-fluid w-100"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13a.jpg" alt="Sample">
+        </div>
+
+        <div class="text-center pt-4">
+
+          <h5>{{productDetails.product_name}}</h5>
+          <p class="mb-2 text-muted text-uppercase small">{{productDetails.product_id}}</p>
+          <hr>
+          <h6 class="mb-3"> {{productDetails.price}}$</h6>
+          <button type="button" (click)="addtoCart(productDetails.id)" class="btn btn-primary btn-sm mr-1 mb-2"><i
+            class="fas fa-shopping-cart pr-2"></i>Add to cart</button>
+        </div>
+
+      </div>
+      <!-- Card -->
+
+    </div>
+    <!-- Grid column -->
+
+
+  </div>
+  <!-- Grid row -->
+  <app-footer></app-footer>
+
+</section>
+<!--Section: Block Content-->
